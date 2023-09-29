@@ -5,7 +5,14 @@ import string
 
 # function to generate random names for a given number of ec2 instances
 def ec2_naming_generator(): 
-
+    
+    # script banner display
+    print('''
+    =======================================
+    ====== EC2 RANDOM NAME GENERATOR ======
+    =======================================
+    ''')
+    
     # ask user for number of ec2 instances they want named
     ec2_inst_requested = int(input('Enter number of EC2 instances that require a name: '))
 
@@ -31,7 +38,7 @@ def ec2_naming_generator():
     
     # for loop to iterate through the number of ec2 names requested
     for i in range(ec2_inst_requested): 
-        print(department_name + character_generator())
+        print(department_name + '-' + character_generator())
 
 # call the function
 ec2_naming_generator() 
