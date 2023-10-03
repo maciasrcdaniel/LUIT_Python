@@ -27,6 +27,7 @@ for connects in connections:
         city_count += 1
         time_sum_count += connects[2]
         time_ave = time_sum_count/city_count
+# print with f-strings
 print(f'{city_count} connections lead to Rome with an average flight time of {time_ave} minutes')
         
 
