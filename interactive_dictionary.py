@@ -16,8 +16,11 @@ sample_dict = {
     # 5. if word is NOT in the dictionary print: No match! 
     # 6. keep asking user the original prompt until they type: EXIT
 
+# while loop while the action is true
 while True: 
+    # prompt that will loop until EXIT conditional is met
     enter_prompt = input('Enter a word in English or EXIT: ')
+    # if the user enters EXIT capi
     if enter_prompt == 'EXIT':
         print('Bye!')
         break
@@ -28,4 +31,4 @@ while True:
 
 
         
-    
+
